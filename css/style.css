@@ -1,0 +1,100 @@
+*{
+padding : 0;
+margin : 0;
+border : 0;
+}
+body{
+background-image : url(' http://www.pptback.com/uploads/fruit-food-frame-backgrounds-powerpoint.jpg ');
+background-attachment : fixed;
+background-size : 100% auto;
+}
+#bigbox{
+display : block;
+width : 1250px;
+overflow : auto;
+margin : 25px auto 0 auto;
+}
+header{
+background-color : pink;  /* rgba(0, 0, 0, 0); */
+float : left;
+clear : none;
+height : 200px;
+width : 1250px; 
+} 
+nav{
+background-color : purple; /* rgba(0, 0, 0, 0); */
+float : left;
+clear : none;
+height : 50px;
+width : 1250px;
+}
+.BarLeft{
+float : left;
+clear : none;
+min-width : 80px;
+min-height : 80px;
+}
+.BarLeftTop{
+background-color : orange;/* rgba(0, 0, 0, 0); */
+float : none;
+clear : both;
+height : 200px;
+width : 325px;
+}
+.BarLeftMid{
+background-color : green;/* rgba(0, 0, 0, 0); */
+float : none;
+clear : both;
+height : 200px;
+width : 325px;
+}
+.BarLeftButtom{
+background-color : blue;/* rgba(0, 0, 0, 0); */
+clear : both;
+float : none;
+position : relative;
+width : 325px;
+height : 200px;
+}
+.MainContent{
+background-color : red;/* rgba(0, 0, 0, 0); */
+float : left;
+clear : none;
+height : 600px;
+width : 600px;
+}
+.BarRight{
+float : left;
+clear : none;
+min-width : 80px;
+min-height : 80px;
+}
+.BarRightTop{
+background-color : orange;/* rgba(0, 0, 0, 0); */
+float : none;
+clear : both;
+height : 200px;
+width : 325px;
+}
+.BarRightMid{
+background-color : green;/* rgba(0, 0, 0, 0); */
+float : none;
+clear : both;
+height : 200px;
+width : 325px;
+}
+.BarRightButtom{
+background-color : blue;/* rgba(0, 0, 0, 0); */
+clear : none;
+float : left;
+position : relative;
+width : 325px;
+height : 200px;
+}
+footer{
+background-color : yellow;/* rgba(0, 0, 0, 0); */
+float : left;
+clear : none;
+height : 175px;
+width : 1250px;
+}
