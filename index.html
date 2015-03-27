@@ -3,30 +3,37 @@
 <html lang="en">
 <head>
 	<meta charset=utf-8">
-	<title>Baking Site</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Baking Site" content="This is a website designed for who enjoys baking, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<meta name="Baking Site" content="This is a website designed for who enjoy baking", initial-scale=1.0>
+	<title>Baking Site</title>
 </head>
-
 <body>
 	<!--This is our wrapper or big box"-->
 	<div id="bigbox">
 		<!--Below it's our first col where we will put our logo on the top of the page-->
 		<header>
-			<!--We can put ref to the page "About us" when click on our logo/we need to create our logo-->
-			<a href="#"><img src="#" alt="Baking Site" title="Baking Site"/></a>
+			<!--when click on our logo go to our homepage-->
+			<a href="index.html"><img src="images/BakingWebsiteLogo.jpg" alt="Baking Website" title="Baking Website"/></a>
 		</header>
 		
 		<!--This is our navigation menu between the logo and the content-->
-		<nav>
+		<div id='nav'>
 			<ul>
-				<li class='active'><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Recipes</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href='#'><span>Home</span></a></li>
+				<li class='active has-sub'><a href='#'><span>Recipes</span></a>
+					<ul>
+						<li class='has-sub'><a href='#'><span>Guinness Irish Stew</span></a>
+						<li class='has-sub'><a href='#'><span>Brazilian Cheese Bread</span></a>
+						</li>
+					</ul>
+				</li>
+				<li><a href='#'><span>About us</span></a></li>
+				<li class='last'><a href='#'><span>Contact</span></a></li>
 			</ul>
-		</nav>
+		</div>
 		
+		<!--These are our boxes of content to other pages-->
 		<div class="BarLeft">
 			<div class="BarLeftTop">
 				<p>BAKING SITE LT</p>
@@ -59,12 +66,31 @@
 			</div>
 		</div>
 	
+		<!--This is our space for infos-->
 		<footer>
-		<p>BAKING SITE FT</p>
+			<div class="section">
+				<p>Space for infos<br>
+				Space for infos<br>
+				Space for infos<br>
+				Space for infos<br>
+				Space for infos</p>
+			</div>
+			
+			<div class="section">
+				<ul>
+					<li><a href="#"><img src="images/facebook.png"/></a></li>
+					<li><a href="#"><img src="images/googleplus.png"/></a></li>
+					<li><a href="#"><img src="images/twitter.png"/></a></li>
+					<li><a href="#"><img src="images/youtube.png"/></a></li>
+				</ul>
+			</div>
+			
+			<div class="section">
+				<p>Space for infos</p>
+			</div>
 		</footer>
-		
 	</div>
-
+<p style="text-align: center; padding: 0px;">&#169;Copyright - Baking Website, 2015.</p>
 </body>
 
 

@@ -3,31 +3,216 @@ padding : 0;
 margin : 0;
 border : 0;
 }
+
 body{
-background-image : url(' http://www.pptback.com/uploads/fruit-food-frame-backgrounds-powerpoint.jpg ');
+background-image : url(' http://seamlesspatternchecker.com/hash/seamless-pattern-samples/c/7/7/c77-vector-sweet-seamless-pattern-hand-drawn-vector-background-endless-food-pattern-for-kitchen-and-cafe-200020616.jpg ');
 background-attachment : fixed;
 background-size : 100% auto;
 }
+
 #bigbox{
 display : block;
 width : 1250px;
 overflow : auto;
 margin : 25px auto 0 auto;
 }
+
 header{
-background-color : pink;  /* rgba(0, 0, 0, 0); */
+background-color : white;  
 float : left;
 clear : none;
 height : 200px;
-width : 1250px; 
+width : 1250px;
+text-align:center;
+border-radius: 5px 5px 0 0;
+-moz-border-radius: 5px 5px 0 0;
+-webkit-border-radius: 5px 5px 0 0; 
+border-bottom: 2px solid #df007a;
 } 
-nav{
-background-color : purple; /* rgba(0, 0, 0, 0); */
+
+/* This is our codes for the Menu/Navigation bar */
+#nav ul,
+#nav li,
+#nav span,
+#nav a {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#nav{
 float : left;
 clear : none;
 height : 50px;
 width : 1250px;
+line-height: 1;
+background: #ffffff;
+background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
+background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+background: -o-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+background: -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+background: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+border-bottom: 2px solid #df007a;
 }
+
+#nav:after,
+#nav ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#nav a {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+  color: #ffffff;
+  display: block;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  padding: 19px 20px;
+  text-decoration: none;
+}
+#nav ul {
+  list-style: none;
+}
+#nav > ul > li {
+  display: inline-block;
+  float: left;
+  margin: 0;
+}
+#nav.align-center {
+  text-align: center;
+}
+#nav.align-center > ul > li {
+  float: none;
+}
+#nav.align-center ul ul {
+  text-align: left;
+}
+#nav.align-right > ul {
+  float: right;
+}
+#nav.align-right ul ul {
+  text-align: right;
+}
+#nav > ul > li > a {
+  color: #000000;
+  font-size: 12px;
+}
+#nav > ul > li:hover:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #df007a;
+  margin-left: -10px;
+}
+#nav > ul > li:first-child > a {
+  border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+  -webkit-border-radius: 5px 0 0 0;
+}
+#nav.align-right > ul > li:first-child > a,
+#nav.align-center > ul > li:first-child > a {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+#nav.align-right > ul > li:last-child > a {
+  border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+  -webkit-border-radius: 0 5px 0 0;
+}
+#nav > ul > li.active > a,
+#nav > ul > li:hover > a {
+  color: #000000;
+  box-shadow: inset 0 0 3px #d9d9d9;
+  -moz-box-shadow: inset 0 0 3px #d9d9d9;
+  -webkit-box-shadow: inset 0 0 3px #d9d9d9;
+  background: #f2f2f2;
+  background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 100%);
+}
+#nav .has-sub {
+  z-index: 1;
+}
+#nav .has-sub:hover > ul {
+  display: block;
+}
+#nav .has-sub ul {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 100%;
+  left: 0;
+}
+#nav.align-right .has-sub ul {
+  left: auto;
+  right: 0;
+}
+#nav .has-sub ul li {
+  *margin-bottom: -1px;
+}
+#nav .has-sub ul li a {
+  background: #df007a;
+  border-bottom: 1px dotted #E22E90;
+  font-size: 11px;
+  filter: none;
+  display: block;
+  line-height: 120%;
+  padding: 10px;
+  color: #ffffff;
+}
+#nav .has-sub ul li:hover a {
+  background: #C10069;
+}
+#nav ul ul li:hover > a {
+  color: #ffffff;
+}
+#nav .has-sub .has-sub:hover > ul {
+  display: block;
+}
+#nav .has-sub .has-sub ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+#nav.align-right .has-sub .has-sub ul,
+#nav.align-right ul ul ul {
+  left: auto;
+  right: 100%;
+}
+#nav .has-sub .has-sub ul li a {
+  background: #a80008;
+  border-bottom: 1px dotted #ff0f1b;
+}
+#nav .has-sub .has-sub ul li a:hover {
+  background: #8f0007;
+}
+#nav ul ul li.last > a,
+#nav ul ul li:last-child > a,
+#nav ul ul ul li.last > a,
+#nav ul ul ul li:last-child > a,
+#nav .has-sub ul li:last-child > a,
+#nav .has-sub ul li.last > a {
+  border-bottom: 0;
+}
+
+/* This is our style for the boxes of content */
 .BarLeft{
 float : left;
 clear : none;
@@ -35,21 +220,21 @@ min-width : 80px;
 min-height : 80px;
 }
 .BarLeftTop{
-background-color : orange;/* rgba(0, 0, 0, 0); */
+background-color : orange;
 float : none;
 clear : both;
 height : 200px;
 width : 325px;
 }
 .BarLeftMid{
-background-color : green;/* rgba(0, 0, 0, 0); */
+background-color : green;
 float : none;
 clear : both;
 height : 200px;
 width : 325px;
 }
 .BarLeftButtom{
-background-color : blue;/* rgba(0, 0, 0, 0); */
+background-color : blue;
 clear : both;
 float : none;
 position : relative;
@@ -57,7 +242,7 @@ width : 325px;
 height : 200px;
 }
 .MainContent{
-background-color : red;/* rgba(0, 0, 0, 0); */
+background-color : red;
 float : left;
 clear : none;
 height : 600px;
@@ -70,31 +255,108 @@ min-width : 80px;
 min-height : 80px;
 }
 .BarRightTop{
-background-color : orange;/* rgba(0, 0, 0, 0); */
+background-color : orange;
 float : none;
 clear : both;
 height : 200px;
 width : 325px;
 }
 .BarRightMid{
-background-color : green;/* rgba(0, 0, 0, 0); */
+background-color : green;
 float : none;
 clear : both;
 height : 200px;
 width : 325px;
 }
 .BarRightButtom{
-background-color : blue;/* rgba(0, 0, 0, 0); */
+background-color : blue;
 clear : none;
 float : left;
 position : relative;
 width : 325px;
 height : 200px;
 }
+
+.section{
+width:29%;
+float:left;
+margin:2%;
+text-align:center;
+}
+
 footer{
-background-color : yellow;/* rgba(0, 0, 0, 0); */
+background-color : transparent;
 float : left;
 clear : none;
 height : 175px;
 width : 1250px;
 }
+
+footer p,footer h3{
+/*color:#F1F0D1;*/
+text-decoration: none;
+}
+
+footer p a{
+/*color:#F1F0D1;*/
+text-decoration:none;
+}
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+}
+li{
+display:inline;
+}
+
+/*
+ul li img{
+height:50px;
+}*/
+
+/*This is where the media start*/
+@media screen and (max-width:478px){
+	body{
+	font-size:13px;
+	}
+}
+@media screen and (max-width:740px){
+	nav{
+	width:100%;
+	margin-bottom:10px;
+}
+
+nav ul{
+list-style:none;
+margin:0 auto;
+padding-left:0;
+}
+
+nav ul li{
+text-align:center;
+margin-left:0 auto;
+width:100%;
+border-top:1px solid #878E63;
+border-right:0px solid #878E63;
+border-bottom:1px solid #878E63;
+border-left:0px solid #878E63;
+}
+nav ul li a{
+padding:8px 0;
+font-size:16px;
+}
+.left-col{
+	width:100%;
+}
+.sidebar{
+	width:100%;
+}
+.section{
+	float:left;
+	width:100%;	
+	margin:0;
+}
+}
+
+
