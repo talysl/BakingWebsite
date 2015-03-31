@@ -11,3 +11,6 @@ https://www.youtube.com/watch?v=NtKkSxUjwvU
 
 Div Maker (to see how to divide the page):
 http://www.blended-html.com/index.html
+
+Logo Maker:
+http://www.logogarden.com/
