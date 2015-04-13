@@ -1,16 +1,15 @@
-Baking Website in development for Web Design module at Higher Diploma in Computing course.
+Baking Website developed for Web Design module at Higher Diploma in Computing course.
 Teamwork by Ciara Keenan & Talita S. Lima.
 
-Resources to help:
+Website: https://bakingwebsite.freeiz.com​
 
-Site Example:
-http://pt.wix.com/website-template/view/html/1317?utm_source=media_buying&utm_medium=paid_referral&utm_campaign=ma_freewebtemplates.com&experiment_id=freewebtemplates.com%255Ethumbnail1%255E180x184-citybakery#
+Supportive Resources:
 
-Tutorial:
-https://www.youtube.com/watch?v=NtKkSxUjwvU 
-
-Div Maker (to see how to divide the page):
+Divs (to see how the page can look like):
 http://www.blended-html.com/index.html
 
-Logo Maker:
+Logo
 http://www.logogarden.com/
+
+Jssor JQuery
+https://jssor.com
