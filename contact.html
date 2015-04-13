@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--Baking Website Developed by Ciara Keenan & Talita S. Lima as Web Design Project-->
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<title>Contact - Baking Website</title>
+</head>
+<body>
+	<!--This is our wrapper or big box"-->
+	<div id="bigbox">
+		<!--Below it's our first column with our logo on the top of the page-->
+		<header>
+			<!--when click on our logo go to our homepage-->
+			<a href="index.html"><img src="images/BakingWebsite.jpg" alt="Baking Website" title="Baking Website"/></a>
+		</header>
+		
+		<!--This is our navigation menu-->
+		<div id='nav'>
+			<ul>
+				<li><a href='index.html'><span>Home</span></a></li>
+				<li class='active has-sub'><a href='#'><span>Recipes</span></a>
+					<ul>
+						<li class='has-sub'><a href='cupcakes/cupcakes.html'><span>Cupcakes</span></a>
+						<li class='has-sub'><a href='brownies/brownies.html'><span>Brownies</span></a>
+						<li class='has-sub'><a href='mixture/mixture.html'><span>Fudge</span></a>
+						<li class='has-sub'><a href='mixture/mixture.html'><span>Cheesecake</span></a>
+						<li class='has-sub'><a href='mixture/mixture.html'><span>Fruit Loaf</span></a>
+						</li>
+					</ul>
+				</li>
+				<li><a href='about.html'><span>About us</span></a></li>
+				<li class='last'><a href='contact.html'><span>Contact</span></a></li>
+			</ul>
+		</div>
+
+		<div id='contact' align='center'>
+		<h2><i><p> Here at Talita's and Ciara's bakes we love to hear from all our loyal fans!<br>
+				Maybe you have a question? suggestion? or something in between?<br>
+				Leave us a comment or fill in your details...<br>
+				We are always delighted to hear from you!<br>
+				And we don't take forever to reply...<br>
+				Also....<br>
+				All your contact details will be treated as confidential!
+		</p></i></h2>		
+
+		<form name="BakingUserFeedback" action="MAILTO:tsl_sp@msn.com" method="post" enctype="text/plain">
+			Name:<br>
+				<input type="text" name="fname" placeholder="Please enter your Full Name">
+			<br>
+			Telephone:<br>
+				<input type="text" name="phone" placeholder="e.g.: +353xxxxxx">
+			<br>
+			Email:<br>
+				<input type="text" name="email" placeholder="Please enter your email">
+			<br>
+			
+			Where did you find us?:
+			<br>
+				<select name="findFrom">
+					<option value="Select here">Select Here</option>
+					<option value="Google">Google Search</option>
+					<option value="Facebook">Facebook</option>
+					<option value="Twitter">Twitter</option>
+					<option value="Youtube">Youtube</option>
+					<option value="Other">Other(Leave us a comment)</option>
+				</select>
+			<br>
+			<br>
+			Comment:<br>
+				<p><textarea rows="4" cols="50" type="text" name="comment" placeholder="Do you have a comment about something you seen on the site?"></textarea></p>
+			<br>
+			Suggestion:<br>
+				<p><textarea rows="4" cols="50" type="text" name="suggest" placeholder="Maybe you have a Suggestion about something we could make a better?"></textarea></p>
+			<br>
+			Something else?:<br>
+				<p><textarea rows="4" cols="50"  type="text" name="otherRequests" placeholder="Please text here."></textarea></p>
+			<br>
+			<br><input type="button" value="Submit"/><input type="reset"/>
+		</form>
+
+		<h2> See You Soon</h2>
+		
+		<!--This is our space for infos-->
+		<footer>
+			<div class="section">
+				<h2>Baking Website</h2>
+				<h2><a href='about.html'>About us</a></h2>
+			</div>
+			
+			<div class="section">
+				<ul>
+					<li><a href="#"><img src="images/facebook.png"/></a></li>
+					<li><a href="#"><img src="images/googleplus.png"/></a></li>
+					<li><a href="#"><img src="images/twitter.png"/></a></li>
+					<li><a href="#"><img src="images/youtube.png"/></a></li>
+				</ul>
+			</div>
+			
+			<div class="section">
+				<h2>Support</h2>
+				<h2><a href='sitemap.html'>Site Map</a></h2>
+			</div>
+		</footer>
+	</div>
+	<p style="text-align: center; padding: 0px;">&#169;Copyright - Baking Website, 2015.</p>
+</body>
+</html>

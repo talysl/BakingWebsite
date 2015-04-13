@@ -4,93 +4,224 @@
 <head>
 	<meta charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="Baking Site" content="This is a website designed for who enjoys baking, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css"/>
-	<title>Baking Site</title>
+	<title>Baking Website</title>
 </head>
 <body>
 	<!--This is our wrapper or big box"-->
 	<div id="bigbox">
-		<!--Below it's our first col where we will put our logo on the top of the page-->
+		<!--Below it's our first column with our logo on the top of the page-->
 		<header>
 			<!--when click on our logo go to our homepage-->
-			<a href="index.html"><img src="images/BakingWebsiteLogo.jpg" alt="Baking Website" title="Baking Website"/></a>
+			<a href="index.html"><img src="images/BakingWebsite.jpg" alt="Baking Website" title="Baking Website"/></a>
 		</header>
 		
-		<!--This is our navigation menu between the logo and the content-->
+		<!--This is our navigation menu-->
 		<div id='nav'>
 			<ul>
-				<li><a href='#'><span>Home</span></a></li>
+				<li><a href='index.html'><span>Home</span></a></li>
 				<li class='active has-sub'><a href='#'><span>Recipes</span></a>
 					<ul>
-						<li class='has-sub'><a href='recipes/cupcake.html'><span>Cupcakes</span></a>
-						<li class='has-sub'><a href='#'><span>Brazilian Cheese Bread</span></a>
+						<li class='has-sub'><a href='cupcakes/cupcakes.html'><span>Cupcakes</span></a>
+						<li class='has-sub'><a href='brownies/brownies.html'><span>Brownies</span></a>
+						<li class='has-sub'><a href='mixture/mixture.html'><span>Fudge</span></a>
+						<li class='has-sub'><a href='mixture/mixture.html'><span>Cheesecake</span></a>
+						<li class='has-sub'><a href='mixture/mixture.html'><span>Fruit Loaf</span></a>
 						</li>
 					</ul>
 				</li>
-				<li><a href='#'><span>About us</span></a></li>
-				<li class='last'><a href='#'><span>Contact</span></a></li>
+				<li><a href='about.html'><span>About us</span></a></li>
+				<li class='last'><a href='contact.html'><span>Contact</span></a></li>
 			</ul>
 		</div>
 		
-		<!--These are our boxes of content to other pages-->
+		<!--These are our boxes of content and ads-->
+		<!--Left side-->
 		<div class="BarLeft">
 			<div class="BarLeftTop">
-				<p>BAKING SITE LT</p>
+				<iframe width="325" height="170" src="https://www.youtube.com/embed/2OAUM0MRgQw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				<h1 align="center">Keep Calm</h1>
+				<h1 align="center"> and </h1>
+				<h1 align="center">Love Croissant!</h1>
 			</div>
-		
+					
 			<div class="BarLeftMid">
-			<p>BAKING SITE LB</p>
+				<iframe width="325" height="170" src="https://www.youtube.com/embed/fvIQ6tQv6R8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" frameborder="0" allowfullscreen></iframe>
+				<h1 align="center">Guinness Irish Stew</h1>
+				<h1 align="center">for dinner</h1>
 			</div>
 			
-			<div class="BarLeftButtom">
-			<p>BAKING SITE LBL</p>
-			</div>
+			<!--<div class="BarLeftButtom">
+				<iframe width="325" height="170" src="https://www.youtube.com/embed/8yU9s7--nx4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				<h2 align="center">Making a nice Naked Cake</h2>
+			</div>-->
 		</div>
-	
+		
+		<!--Middle-->
 		<div class="MainContent">
-		<p>BAKING SITE MAIN</p>
+			<!--We wanted to give some movement for the Homepage, so we customized this banner in JavaScript to run in our page-->
+			
+			<!-- This is where the slider effect begin -->
+			<div id="slider1_container" style="position: relative; width: 600px; height: 600px; background-color: #000; overflow: hidden; ">
+
+				<!-- Loading Screen -->
+				<div u="loading" style="position: absolute; top: 0px; left: 0px;">
+					<div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+					background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+					</div>
+					<div style="position: absolute; display: block; background: url(images/loading.gif) no-repeat center center;
+					top: 0px; left: 0px;width: 100%;height:100%;">
+					</div>
+				</div>
+
+				<!-- Slides Container -->
+				<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 600px;
+				overflow: hidden;">
+					<div>
+						<a u=image href="mixture/mixture.html"><img src="images/banner/FruitLoaf.jpg" /></a>
+					</div>
+					<div>
+						<a u=image href="cupcakes/cupcakes.html"><img src="images/banner/Cupcakes.jpg" /></a>
+					</div>
+					<div>
+						<a u=image href="mixture/mixture.html"><img src="images/banner/Cheesecake.jpg" /></a>
+					</div>
+					<div>
+						<a u=image href="brownies/brownies.html"><img src="images/banner/Brownies.jpg" /></a>
+					</div>
+					<div>
+						<a u=image href="mixture/mixture.html"><img src="images/banner/Fudge.jpg" /></a>
+					</div>
+				</div>
+			</div>
+			<!-- This is where the slider effect end -->
 		</div>
-	
+
+		<!--Right Side-->
 		<div class="BarRight">
 			<div class="BarRightTop">
-			<p>BAKING SITE RT</p>
+				<iframe width="325" height="170" src="https://www.youtube.com/embed/mVIUNrJ-Fmk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				<h1 align="center">Traditional</h1>
+				<h1 align="center"> Irish </h1>
+				<h1 align="center">Soda Bread</h1>
 			</div>
 			
 			<div class="BarRightMid">
-			<p>BAKING SITE RB</p>
+				<iframe width="325" height="170" src="https://www.youtube.com/embed/zraV-IxWNJg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				<h1 align="center">Brazilian Cheese Bread</h1>
+				<h1 align="center">(English Subtitles)</h1>
 			</div>
 			
-			<div class="BarRightButtom">
-			<p>BAKING SITE RBL</p>
-			</div>
+			<!--<div class="BarRightButtom">
+				<iframe width="325" height="170" src="https://www.youtube.com/embed/rpXUj0QPrjY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				<h1 align="center">Delicious Fuba Cake</h1>
+				<h1 align="center">(English Subtitles)</h1>
+			</div>-->
 		</div>
 	
 		<!--This is our space for infos-->
 		<footer>
 			<div class="section">
-				<p>Space for infos<br>
-				Space for infos<br>
-				Space for infos<br>
-				Space for infos<br>
-				Space for infos</p>
+				<h2>Baking Website</h2>
+				<h2><a href='about.html'>About us</a></h2>
 			</div>
 			
 			<div class="section">
 				<ul>
-					<li><a href="#"><img src="images/facebook.png"/></a></li>
-					<li><a href="#"><img src="images/googleplus.png"/></a></li>
-					<li><a href="#"><img src="images/twitter.png"/></a></li>
-					<li><a href="#"><img src="images/youtube.png"/></a></li>
+					<li><a href="https://facebook.com"><img src="images/facebook.png"/></a></li>
+					<li><a href="https://plus.google.com/"><img src="images/googleplus.png"/></a></li>
+					<li><a href="https://twitter.com"><img src="images/twitter.png"/></a></li>
+					<li><a href="https://youtube.com"><img src="images/youtube.png"/></a></li>
 				</ul>
 			</div>
 			
 			<div class="section">
-				<p>Space for infos</p>
+				<h2>Support</h2>
+				<h2><a href='sitemap.html'>Site Map</a></h2>
 			</div>
 		</footer>
 	</div>
-<p style="text-align: center; padding: 0px;">&#169;Copyright - Baking Website, 2015.</p>
+	
+	<!--This is the script for the Slider effect-->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            //Reference http://www.jssor.com/development/slider-with-slideshow-jquery.html
+            //Reference http://www.jssor.com/development/tool-slideshow-transition-viewer.html
+
+            var _SlideshowTransitions = [
+                //Fade Twins
+                { $Duration: 700, $Opacity: 2, $Brother: { $Duration: 1000, $Opacity: 2 } },
+                //Rotate Overlap
+                { $Duration: 1200, $Zoom: 11, $Rotate: -1, $Easing: { $Zoom: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Round: { $Rotate: 0.5 }, $Brother: { $Duration: 1200, $Zoom: 1, $Rotate: 1, $Easing: $JssorEasing$.$EaseSwing, $Opacity: 2, $Round: { $Rotate: 0.5 }, $Shift: 90 } },
+                //Switch
+                { $Duration: 1400, x: 0.25, $Zoom: 1.5, $Easing: { $Left: $JssorEasing$.$EaseInWave, $Zoom: $JssorEasing$.$EaseInSine }, $Opacity: 2, $ZIndex: -10, $Brother: { $Duration: 1400, x: -0.25, $Zoom: 1.5, $Easing: { $Left: $JssorEasing$.$EaseInWave, $Zoom: $JssorEasing$.$EaseInSine }, $Opacity: 2, $ZIndex: -10 } },
+                //Rotate Relay
+                { $Duration: 1200, $Zoom: 11, $Rotate: 1, $Easing: { $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Round: { $Rotate: 1 }, $ZIndex: -10, $Brother: { $Duration: 1200, $Zoom: 11, $Rotate: -1, $Easing: { $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Round: { $Rotate: 1 }, $ZIndex: -10, $Shift: 600 } },
+                //Doors
+                { $Duration: 1500, x: 0.5, $Cols: 2, $ChessMode: { $Column: 3 }, $Easing: { $Left: $JssorEasing$.$EaseInOutCubic }, $Opacity: 2, $Brother: { $Duration: 1500, $Opacity: 2 } },
+                //Rotate in+ out-
+                { $Duration: 1500, x: -0.3, y: 0.5, $Zoom: 1, $Rotate: 0.1, $During: { $Left: [0.6, 0.4], $Top: [0.6, 0.4], $Rotate: [0.6, 0.4], $Zoom: [0.6, 0.4] }, $Easing: { $Left: $JssorEasing$.$EaseInQuad, $Top: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Brother: { $Duration: 1000, $Zoom: 11, $Rotate: -0.5, $Easing: { $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Shift: 200 } },
+                //Fly Twins
+                { $Duration: 1500, x: 0.3, $During: { $Left: [0.6, 0.4] }, $Easing: { $Left: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true, $Brother: { $Duration: 1000, x: -0.3, $Easing: { $Left: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 } },
+                //Rotate in- out+
+                { $Duration: 1500, $Zoom: 11, $Rotate: 0.5, $During: { $Left: [0.4, 0.6], $Top: [0.4, 0.6], $Rotate: [0.4, 0.6], $Zoom: [0.4, 0.6] }, $Easing: { $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Brother: { $Duration: 1000, $Zoom: 1, $Rotate: -0.5, $Easing: { $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Shift: 200 } },
+                //Rotate Axis up overlap
+                { $Duration: 1200, x: 0.25, y: 0.5, $Rotate: -0.1, $Easing: { $Left: $JssorEasing$.$EaseInQuad, $Top: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Brother: { $Duration: 1200, x: -0.1, y: -0.7, $Rotate: 0.1, $Easing: { $Left: $JssorEasing$.$EaseInQuad, $Top: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2 } },
+                //Chess Replace TB
+                { $Duration: 1600, x: 1, $Rows: 2, $ChessMode: { $Row: 3 }, $Easing: { $Left: $JssorEasing$.$EaseInOutQuart, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Brother: { $Duration: 1600, x: -1, $Rows: 2, $ChessMode: { $Row: 3 }, $Easing: { $Left: $JssorEasing$.$EaseInOutQuart, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 } },
+                //Chess Replace LR
+                { $Duration: 1600, y: -1, $Cols: 2, $ChessMode: { $Column: 12 }, $Easing: { $Top: $JssorEasing$.$EaseInOutQuart, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Brother: { $Duration: 1600, y: 1, $Cols: 2, $ChessMode: { $Column: 12 }, $Easing: { $Top: $JssorEasing$.$EaseInOutQuart, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 } },
+                //Shift TB
+                { $Duration: 1200, y: 1, $Easing: { $Top: $JssorEasing$.$EaseInOutQuart, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Brother: { $Duration: 1200, y: -1, $Easing: { $Top: $JssorEasing$.$EaseInOutQuart, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 } },
+                //Shift LR
+                { $Duration: 1200, x: 1, $Easing: { $Left: $JssorEasing$.$EaseInOutQuart, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Brother: { $Duration: 1200, x: -1, $Easing: { $Left: $JssorEasing$.$EaseInOutQuart, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 } },
+                //Return TB
+                { $Duration: 1200, y: -1, $Easing: { $Top: $JssorEasing$.$EaseInOutQuart, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $ZIndex: -10, $Brother: { $Duration: 1200, y: -1, $Easing: { $Top: $JssorEasing$.$EaseInOutQuart, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $ZIndex: -10, $Shift: -100 } },
+                //Return LR
+                { $Duration: 1200, x: 1, $Delay: 40, $Cols: 6, $Formation: $JssorSlideshowFormations$.$FormationStraight, $Easing: { $Left: $JssorEasing$.$EaseInOutQuart, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $ZIndex: -10, $Brother: { $Duration: 1200, x: 1, $Delay: 40, $Cols: 6, $Formation: $JssorSlideshowFormations$.$FormationStraight, $Easing: { $Top: $JssorEasing$.$EaseInOutQuart, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $ZIndex: -10, $Shift: -100 } },
+                //Rotate Axis down
+                { $Duration: 1500, x: -0.1, y: -0.7, $Rotate: 0.1, $During: { $Left: [0.6, 0.4], $Top: [0.6, 0.4], $Rotate: [0.6, 0.4] }, $Easing: { $Left: $JssorEasing$.$EaseInQuad, $Top: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Brother: { $Duration: 1000, x: 0.2, y: 0.5, $Rotate: -0.1, $Easing: { $Left: $JssorEasing$.$EaseInQuad, $Top: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2 } },
+                //Extrude Replace
+                { $Duration: 1600, x: -0.2, $Delay: 40, $Cols: 12, $During: { $Left: [0.4, 0.6] }, $SlideOut: true, $Formation: $JssorSlideshowFormations$.$FormationStraight, $Assembly: 260, $Easing: { $Left: $JssorEasing$.$EaseInOutExpo, $Opacity: $JssorEasing$.$EaseInOutQuad }, $Opacity: 2, $Outside: true, $Round: { $Top: 0.5 }, $Brother: { $Duration: 1000, x: 0.2, $Delay: 40, $Cols: 12, $Formation: $JssorSlideshowFormations$.$FormationStraight, $Assembly: 1028, $Easing: { $Left: $JssorEasing$.$EaseInOutExpo, $Opacity: $JssorEasing$.$EaseInOutQuad }, $Opacity: 2, $Round: { $Top: 0.5 } } }
+            ];
+
+
+            var options = {
+                $FillMode: 1,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 2500,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                    $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                    $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                },
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 600));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+	<p style="text-align: center; padding: 0px;">&#169;Copyright - Baking Website, 2015.</p>
 </body>
 
 
